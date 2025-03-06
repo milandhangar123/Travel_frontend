@@ -1,5 +1,6 @@
 import "./Auth.css";
 import { useAuth, useAlert} from "../../context";
+import { signupHandler } from "../../services";
 import {
   validateEmail,
   validateNumber,
@@ -83,6 +84,9 @@ export const AuthSignup = () => {
       console.log("Invalid Password");
     }
   };
+
+ 
+  
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
